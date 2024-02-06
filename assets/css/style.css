@@ -12,12 +12,40 @@ font-family: 'Sacramento', cursive;
     margin: 0;
 }
 
-#headertext {
-    font-family: 'Sacramento', cursive;
-    color: #eebb44
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #cbcbcb;
 }
 
-body {
-    font-family: 'Oswald';
-    color: #cbcbcb
+#logo {
+    float: left;
+}
+
+#logotext {
+    font-family: 'Sacramento', cursive;
+    font-size: 300%;
+    color: #eebb44;
+}
+
+#menu {
+    font-family: 'Dosis', sans-serif;
+    font-size: 120%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu li {
+    float: right;
+    margin-right: 40px;
+}
+
+menu a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+#logo,
+#menu {
+    line-height: 80px;
 }
