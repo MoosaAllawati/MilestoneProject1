@@ -1,12 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento:200)
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Oswald:wght@300&family=Sacramento&display=swap');
 
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Sacramento', cursive;
+*/
 
-    * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
 
-    #headertext {
-        font-family: Sacramento;
-    }
+#headertext {
+    font-family: 'Sacramento', cursive;
+    color: #eebb44
+}
+
+body {
+    font-family: 'Oswald';
+    color: #cbcbcb
+}
