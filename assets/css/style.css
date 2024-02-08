@@ -19,15 +19,14 @@ body {
 }
 
 #logo,
-#logotext {
-    display: inline-block;
-    align-items: left;
-    float: left;
+#menu {
+    line-height: 100px;
 }
 
-#logotext {
+#logo {
+    float: left;
     font-family: 'Sacramento', cursive;
-    font-size: 300%;
+    font-size: 250%;
     color: #eebb44;
 }
 
@@ -43,12 +42,11 @@ body {
     margin-right: 40px;
 }
 
-menu a {
+#menu a {
     text-decoration: none;
-    co lor: inherit;
+    color: inherit;
 }
 
-#logo,
-#menu {
-    line-height: 100px
+#menu a:hover {
+    border-bottom: 1px solid black;
 }
