@@ -118,3 +118,12 @@ body {
 /*add upcoming events*/
 
 /* SECTION: GALLERY */
+
+/*gallery should have different page background colour*/
+
+#gallery {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 100px;
+}
