@@ -139,26 +139,6 @@ header {
     width: 20%;
 }
 
-#photo1 {
-    padding: 20px;
-    width: 20%;
-}
-
-#photo2 {
-    padding: 20px;
-    width: 20%;
-}
-
-#photo3 {
-    padding: 20px;
-    width: 20%;
-}
-
-#photo4 {
-    padding: 20px;
-    width: 20%;
-}
-
 #video1 {
     padding: 20px;
 }
@@ -179,7 +159,7 @@ header {
 }
 
 form {
-    width: 70%;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -197,6 +177,31 @@ label {
     margin-bottom: 5px;
 }
 
+.radio-group input[type="radio"] {
+    /* Hide the radio buttons */
+    display: none;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"]+label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.radio-group input[type="radio"]:checked+label:before {
+    background-color: #007bff;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -208,31 +213,29 @@ textarea {
     border-radius: 4px;
 }
 
-input[type="radio"] {
-    margin-right: 5px;
-}
-
-input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-/* Additional styles for radio buttons */
-input[type="radio"]+label {
-    margin-left: 10px;
-}
-
-input[type="radio"]:checked+label {
-    font-weight: bold;
-    color: #007bff;
-}
-
 /*reference!*/
+
+/* FOOTER */
+
+footer {
+    height: 100px;
+    position: relative;
+    top: 100px;
+}
+
+#footerlinks {
+    text-align: center;
+}
+
+#footerlinks li {
+    display: inline;
+    line-height: 100px;
+}
+
+#footerlinks i {
+    font-size: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5px;
+    color: #5b1313;
+}
