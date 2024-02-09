@@ -115,11 +115,38 @@ header {
     position: absolute;
 }
 
+/* SECTION EVENTS */
+
 #events {
     width: 100%;
     height: 250px;
+    display: flex;
     position: relative;
     top: 100px;
+    /*background-image: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden; */
+}
+
+#events div {
+    flex: 1;
+    /* To distribute available space equally among the boxes */
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .5);
+    width: 15%;
+    height: 250px;
+    float: left;
+    margin-left: 1%;
+    padding: 25px;
+    text-align: center;
+}
+
+/* To add a margin to the right for balance*/
+#events div:last-child {
+    margin-right: 1%;
 }
 
 /* SECTION: GALLERY */
