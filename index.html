@@ -72,7 +72,60 @@
       <div id="collaborations">collaborations</div>
     </section>
 
-    <section id="contact">Contact</section>
+    <section id="contact">
+      <form action="submit.php" method="POST">
+        <fieldset>
+          <legend><h3>Get in touch!</h3></legend>
+
+          <div>
+            <label>Subject:</label>
+            <input
+              type="radio"
+              id="subject-general"
+              name="subject"
+              value="general"
+            />
+            <label for="subject-general">General Inquiry</label>
+            <input
+              type="radio"
+              id="subject-learn"
+              name="subject"
+              value="learn"
+            />
+            <label for="subject-learn">Learn How to Play the Guitar</label>
+            <input type="radio" id="subject-book" name="subject" value="book" />
+            <label for="subject-book">Book a Performance / Music Session</label>
+          </div>
+
+          <div>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+
+          <div>
+            <label>Your Message:</label>
+            <textarea
+              placeholder="Please include dates, times, and venue details if available"
+              name="inquiry"
+            ></textarea>
+          </div>
+
+          <div>
+            <input type="submit" value="Submit" />
+          </div>
+        </fieldset>
+      </form>
+    </section>
 
     <footer>Social media</footer>
   </body>
