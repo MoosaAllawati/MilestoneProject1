@@ -21,27 +21,29 @@ header {
     top: 0;
     z-index: 100;
     /*to ensure it stays on top*/
-    align-items: center;
-}
-
-#logo,
-#menu {
-    line-height: 100%;
-    /*to vertically center elements*/
+    line-height: 100px;
 }
 
 #logo {
-    float: left;
     font-family: 'Romanesco', Impact;
-    font-size: 250%;
-    color: #eebb44;
+    font-size: 40px;
+    color: #e6be7d;
+}
+
+#logo a {
+    text-decoration: none;
 }
 
 #logo a img {
     height: 90px;
     width: 90px;
     margin-right: 25px;
-    margin-left: 25px;
+}
+
+#logo h2 {
+    float: left;
+    margin-left: 40px;
+    vertical-align: middle;
 }
 
 #menu {
