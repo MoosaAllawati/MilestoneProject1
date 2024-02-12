@@ -1,53 +1,65 @@
+/*
+color palette:
+1) dark grey: rgb(40, 40, 40)
+2) golden: rgb(230, 190, 125)
+3) off-white: rgb(230, 230, 230)
+*/
+
 * {
-    padding: 0;
+    padding-top: 0;
     border: 0;
-    margin: 0;
+    margin-top: 0;
 }
 
 body {
     font-family: 'Rajdhani', sans-serif;
-    width: 100%;
+    width: 100vw;
     max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
 }
 
+/*double check about width, padding, and domino effect*/
+
+/* HEADER */
+
 header {
-    max-width: 1800px;
-    width: 100%;
-    height: 100px;
-    background-color: rgb(40, 40, 40);
     position: fixed;
     top: 0;
     z-index: 100;
-    /*to ensure it stays on top*/
-    line-height: 100px;
+    /* ensure it stays on top in foreseeable future */
+    height: 100px;
+    width: 100%;
+    max-width: 1800px;
+    /* reinstate max width due to change in position */
+    background-color: rgb(40, 40, 40);
 }
 
 #logo {
-    font-family: 'Romanesco', Impact;
-    font-size: 40px;
-    color: #e6be7d;
+    float: left;
+    margin-left: 40px;
 }
 
 #logo a {
     text-decoration: none;
 }
 
-#logo a img {
+#logo img {
     height: 90px;
     width: 90px;
     margin-right: 25px;
 }
 
-#logo h2 {
-    float: left;
-    margin-left: 40px;
-    vertical-align: middle;
+#logo h1 {
+    display: inline;
+    font-family: 'Romanesco', Impact;
+    font-size: 40px;
+    color: rgb(230, 190, 125);
 }
 
 #menu {
     font-size: 120%;
+    color: rgb(230, 230, 230);
     letter-spacing: 4px;
     list-style-type: none;
 }
@@ -66,31 +78,34 @@ header {
     border-bottom: 1px solid black;
 }
 
-
-/* no .active {} style is used due to scroll site type */
+/* NOTES:
+fix logo image position and responsive size
+fix text position
+make all elements appear on same line, linewidth? vertical align? flex?
+style link hover
+no .active {} style is used for links due to scroll site type
+use button for mobile menu */
 
 /* SECTION: ABOUT */
 
 #about {
     width: 100%;
-    height: 600px;
-    position: relative;
-    top: 100px;
+    height: 100vh;
 }
 
 #aboutbackground {
     height: 100%;
     width: 100%;
-    position: relative;
     top: 0;
     left: 0;
+    position: relative;
     overflow: hidden;
 }
 
-#aboutbackground video {
+#aboutbackgroun video {
     position: absolute;
     top: 0;
-    left: 0 auto;
+    /*left: 0 auto;*/
     /*so the face always shows*/
     width: 100%;
     height: 100%;
@@ -114,6 +129,8 @@ header {
     right: 50px;
     position: absolute;
 }
+
+/* show color background if no video  */
 
 /* SECTION EVENTS */
 
