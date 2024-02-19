@@ -165,11 +165,11 @@ use button for mobile menu */
 }
 
 #abouttext main {
+    width: 100%;
     padding: 30px;
 }
 
 #abouttext h3 {
-    color: #cbcbcb;
     margin: 0;
     text-align: center;
 }
