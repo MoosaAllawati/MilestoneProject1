@@ -40,6 +40,7 @@
     </header>
 
     <section id="about">
+
       <div id="aboutbackground">
         <video autoplay muted loop>
           <source src="assets/videos/aboutbackground.mp4" type="video/mp4" />
@@ -69,36 +70,37 @@
     </section>
 
     <section id="events">
-        <h2 class="title">Live Events <br></h2>
-        <div>
+
+        <h2>Live Events</h2>
+        <div class="event">
             <h3><i class="fa-regular fa-calendar-days"></i></h3>
             <h4>A Night of Arabic Music</h3>
             <h5>24/05/2024 - 7:30 PM</h3>
             <h5>Rich Mix, London E1</h3>
             <h3>TICKETS</h3>
         </div>
-        <div>
+        <div class="event">
             <h3><i class="fa-regular fa-calendar-days"></i></h3>
             <h4>A Night of Arabic Music</h3>
             <h5>24/05/2024 - 7:30 PM</h3>
             <h5>Rich Mix, London E1</h3>
             <h3>TICKETS</h3>
         </div>
-        <div>
+        <div class="event">
             <h3><i class="fa-regular fa-calendar-days"></i></h3>
             <h4>A Night of Arabic Music</h3>
             <h5>24/05/2024 - 7:30 PM</h3>
             <h5>Rich Mix, London E1</h3>
             <h3>TICKETS</h3>
         </div>
-        <div>
+        <div class="event">
             <h3><i class="fa-regular fa-calendar-days"></i></h3>
             <h4>A Night of Arabic Music</h3>
             <h5>24/05/2024 - 7:30 PM</h3>
             <h5>Rich Mix, London E1</h3>
             <h3>TICKETS</h3>
         </div>
-        <div>
+        <div class="event">
             <h3><i class="fa-regular fa-calendar-days"></i></h3>
             <h4>A Night of Arabic Music</h3>
             <h5>24/05/2024 - 7:30 PM</h3>
@@ -108,7 +110,7 @@
     </section>
 
     <section id="gallery">
-        <h2 class="title">Gallery</h2>
+        <h2>Gallery</h2>
       <div id="photos">
         <div id="photo1">photo1</div>
         <div id="photo2">photo2</div>
@@ -121,29 +123,18 @@
     </section>
 
     <section id="contact">
-        <h2 class="title">Contact</h2>
+
+        <h2>Get in touch!</h2>
       <form action="submit.php" method="POST">
         <fieldset>
-          <legend><h3>Get in touch!</h3></legend>
-
           <div>
             <label>Subject:</label>
-            <input
-              type="radio"
-              id="subject-general"
-              name="subject"
-              value="general"
-            />
+            <input type="radio" id="subject-general" name="subject" value="general"/>
             <label for="subject-general">General Inquiry</label>
-            <input
-              type="radio"
-              id="subject-learn"
-              name="subject"
-              value="learn"
-            />
+            <input type="radio" id="subject-learn" name="subject" value="learn"/>
             <label for="subject-learn">Learn How to Play the Guitar</label>
-            <input type="radio" id="subject-book" name="subject" value="book" />
-            <label for="subject-book">Book a Performance / Music Session</label>
+            <input type="radio" id="subject-book" name="subject" value="book"/>
+            <label for="subject-book">Book a Performance / Session</label>
           </div>
 
           <div>

@@ -135,8 +135,8 @@ use button for mobile menu */
 
 #events {
     width: 100%;
-    height: 350px;
-    display: flex;
+    text-align: center;
+       
     /*background-image: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,14 +144,41 @@ use button for mobile menu */
     overflow: hidden; */
 }
 
-.title {
+#events h2 {
+    border-bottom: 1px solid #000;
     line-height: 100px;
+    margin: 20px auto;
+    width: 100%;
 }
 
-#events div {
+#events .event {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .5);
+    width: 15%;
+    height: 200px;
+    margin-left: 1%;
+    padding: 25px;
+    display: inline-block;
+    /*margin: 0 2%;*/
+    /*vertical-align: top;*/
+    text-align: center;
+}
+
+#events .event:last-child {
+    margin-right: 1%;
+    /* To add a margin to the right for balance*/
+}
+
+/*.events-strip {
+    width: 100%;
+    height: 350px;
+    display: flex;
+}*/
+
+/* #events .events-strip div {
     flex: 1;
     /* To distribute available space equally among the boxes */
-    color: #fafafa;
+    /* color: #fafafa;
     background-color: rgba(0, 0, 0, .5);
     width: 15%;
     height: 200px;
@@ -159,12 +186,7 @@ use button for mobile menu */
     margin-left: 1%;
     padding: 25px;
     text-align: center;
-}
-
-#events div:last-child {
-    margin-right: 1%;
-    /* To add a margin to the right for balance*/
-}
+}*/
 
 /* ---------- SECTION: GALLERY  ---------- */
 
@@ -174,9 +196,15 @@ use button for mobile menu */
     width: 100%;
     height: 600px;
     position: relative;
-    top: 100px;
     background-color: cornsilk;
     text-align: center;
+}
+
+#gallery h2 {
+    border-bottom: 1px solid #000;
+    line-height: 100px;
+    margin: 20px auto;
+    width: 100%;
 }
 
 #photo1,
@@ -200,11 +228,17 @@ use button for mobile menu */
 
 #contact {
     width: 100%;
-    height: 600px;
+    /*height: 600px;*/
     position: relative;
-    top: 100px;
     background-color: rgb(153, 139, 192);
     text-align: center;
+}
+
+#contact h2 {
+    border-bottom: 1px solid #000;
+    line-height: 100px;
+    margin: 20px auto;
+    width: 100%;
 }
 
 form {
@@ -269,7 +303,6 @@ textarea {
 footer {
     height: 100px;
     position: relative;
-    top: 100px;
 }
 
 #footerlinks {
