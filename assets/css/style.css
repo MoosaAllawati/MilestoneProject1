@@ -31,6 +31,8 @@ header {
     max-width: 1800px;
     /* reinstate max width due to change in position */
     background-color: rgb(40, 40, 40);
+    line-height: 100px;
+    /* to provide a vertical space for alignment*/
 }
 
 #logo {
@@ -46,34 +48,43 @@ header {
     height: 90px;
     width: 90px;
     margin-right: 25px;
+    vertical-align: middle;
 }
 
 #logo h1 {
     display: inline;
     font-family: 'Romanesco', Impact;
-    font-size: 40px;
+    font-size: 50px;
     color: rgb(230, 190, 125);
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-shadow: 3px 3px black;
 }
 
 #menu {
-    font-size: 120%;
-    color: rgb(230, 230, 230);
-    letter-spacing: 4px;
     list-style-type: none;
+    float: right;
+    line-height: 100px;
 }
 
 #menu li {
-    float: right;
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+    letter-spacing: 4px;
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 40px;
 }
 
 #menu a {
     text-decoration: none;
+    padding: 0 5px;
     color: inherit;
 }
 
 #menu a:hover {
-    border-bottom: 1px solid black;
+    border: 2px dotted rgb(230, 190, 125);
+    border-radius: 4px;
 }
 
 /* NOTES:
