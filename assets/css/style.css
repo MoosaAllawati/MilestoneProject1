@@ -136,6 +136,7 @@ use button for mobile menu */
 #events {
     width: 100%;
     text-align: center;
+    background-color: rgb(40, 40, 40);
        
     /*background-image: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png');
     background-repeat: no-repeat;
@@ -145,9 +146,8 @@ use button for mobile menu */
 }
 
 #events h2 {
-    border-bottom: 1px solid #000;
     line-height: 100px;
-    margin: 20px auto;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -194,16 +194,15 @@ use button for mobile menu */
 
 #gallery {
     width: 100%;
-    height: 600px;
+    height: 100vh;
     position: relative;
-    background-color: cornsilk;
+    background-color: rgb(230, 230, 230);
     text-align: center;
 }
 
 #gallery h2 {
-    border-bottom: 1px solid #000;
     line-height: 100px;
-    margin: 20px auto;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -228,21 +227,20 @@ use button for mobile menu */
 
 #contact {
     width: 100%;
-    /*height: 600px;*/
+    height: calc(100vh - 100px);
     position: relative;
     background-color: rgb(153, 139, 192);
     text-align: center;
 }
 
 #contact h2 {
-    border-bottom: 1px solid #000;
     line-height: 100px;
-    margin: 20px auto;
+    margin: 0 auto;
     width: 100%;
 }
 
 form {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -250,38 +248,38 @@ fieldset {
     border: none;
 }
 
-legend {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
 label {
     display: block;
     margin-bottom: 5px;
 }
 
-.radio-group input[type="radio"] {
+#radio-group {
+    text-align: left;
+}
+
+#radio-group input[type="radio"] {
     /* Hide the radio buttons */
     display: none;
 }
 
-.radio-group label {
-    display: inline-block;
-    margin-right: 10px;
+#radio-group label {
+    display: block;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 
-.radio-group input[type="radio"]+label:before {
+#radio-group input[type="radio"]+label:before {
     content: "";
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 2px solid #007bff;
+    border: 2px solid red;
     border-radius: 50%;
     margin-right: 5px;
+    background-color: white;
 }
 
-.radio-group input[type="radio"]:checked+label:before {
+#radio-group input[type="radio"]:checked+label:before {
     background-color: #007bff;
 }
 
@@ -292,7 +290,7 @@ textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid green;
     border-radius: 4px;
 }
 
@@ -302,22 +300,20 @@ textarea {
 
 footer {
     height: 100px;
-    position: relative;
 }
 
-#footerlinks {
+#footer-links {
     text-align: center;
 }
 
-#footerlinks li {
+#footer-links li {
     display: inline;
     line-height: 100px;
 }
 
-#footerlinks i {
+#footer-links i {
     font-size: 50px;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 5px;
     color: #5b1313;
 }
