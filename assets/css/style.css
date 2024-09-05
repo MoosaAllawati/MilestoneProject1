@@ -13,6 +13,8 @@ color palette:
 
 body {
     font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    color: rgb(230, 230, 230);
     width: 100vw;
     max-width: 1800px;
     margin-left: auto;
@@ -36,25 +38,21 @@ h1 {
 h2 {
     font-family: 'Romanesco', Impact;
     font-size: 30px;
-    color: rgb(230, 230, 230);
 }
 
 h3 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
-    color: rgb(230, 230, 230);
 }
 
 h4 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 15px;
-    color: rgb(230, 230, 230)
 }
 
 h5 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 10px;
-    color: rgb(230, 230, 230)
 }
 
 /*  ---------- HEADER ---------- */
@@ -70,7 +68,7 @@ header {
     /* reinstate max width due to change in position */
     background-color: rgb(40, 40, 40);
     line-height: 100px;
-    /* to provide a vertical space for alignment*/
+    /* to provide a vertical clearance for alignment */
 }
 
 #logo {
@@ -97,14 +95,11 @@ header {
 }
 
 #menu li {
-    font-size: 20px;
-    color: rgb(230, 230, 230);
     letter-spacing: 4px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 40px;
 }
-
 
 #menu a:hover {
     border: 2px dotted rgb(230, 190, 125);
@@ -116,254 +111,68 @@ header {
     /* to allow some breathing space for border */
 }
 
-/* NOTES:
-no .active {} style is used for links due to scroll site type
-use button for mobile menu */
+/*---------- SECTIONS ----------*/
 
-/* ---------- SECTION: LIVE ---------- */
-
-#live {
+section {
     width: 100%;
     height: calc(100vh - 100px);
     /* remove 100px for header clearance */
     padding-top: 100px;
-    /* bring the section down below header */
+    /* shift the section down to start below header */
     position: relative;
+    overflow: hidden;
+    background-color: rgb(40, 40, 40);
 }
 
-#aboutbackground {
+section:last-of-type {
+    height: calc(100vh - 200px);
+    /* remove 200px for header and footer clearance */
+    background-image: linear-gradient(rgb(40, 40, 40), rgb(40, 40, 40), rgb(230, 190, 125));
+}
+
+/* ---------- SECTION 1: LIVE ---------- */
+
+#live-background {
     height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
-    position: relative;
-    overflow:hidden;
-}
-
-#aboutbackground video {
     position: absolute;
     top: 0;
     left: 0 auto;
-    /* center horizonally for better responsive visuals */
+}
+
+#live-background video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
-    /* Put the video behind other content */
+    pointer-events: none;
+    /* to avoid interaction with background media */
 }
 
-#abouttext {
-    width: 55%;
-    height: calc(100% - 50px - 50px - 100px);
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+#live-events {
+    height: calc(100vh - 260px);
+    /* using developer tools to fine-tune desired height */
+    width: 60%;
+    position: absolute;
     top: 150px;
     right: 50px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-}
-
-#abouttext main {
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 30px;
+    border-radius: 5px;
+    z-index: 1;
+    /* to ensure it remains on top of background */
 }
 
-#abouttext h3 {
-    margin: 0;
-    text-align: center;
-}
+/* ---------- SECTION 2: ABOUT ---------- */
 
-#abouttext a {
-    color: rgb(230, 190, 125);
-}
 
-/* - show color background if no video 
-- responsive main text size*/
 
-/* ---------- SECTION: EVENTS ---------- */
+/* ---------- SECTION 3: CONTACT ---------- */
 
-/*#events {
-    width: 100%;
-    text-align: center;
-    background-color: rgb(40, 40, 40);*/
-       
-    /*background-image: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden; */
-/*}*/
 
-/*#events h2 {
-    line-height: 100px;
-    margin: 0 auto;
-    width: 100%;
-}*/
-
-/*#events .event {
-    color: #fafafa;
-    background-color: rgba(0, 0, 0, .5);
-    width: 15%;
-    height: 200px;
-    margin-left: 1%;
-    padding: 25px;
-    display: inline-block;*/
-    /*margin: 0 2%;*/
-    /*vertical-align: top;*/
-    /*text-align: center;
-}*/
-
-/*#events .event:last-child {
-    margin-right: 1%;*/
-    /* To add a margin to the right for balance*/
-/*}*/
-
-/*.events-strip {
-    width: 100%;
-    height: 350px;
-    display: flex;
-}*/
-
-/* #events .events-strip div {
-    flex: 1;
-    /* To distribute available space equally among the boxes */
-    /* color: #fafafa;
-    background-color: rgba(0, 0, 0, .5);
-    width: 15%;
-    height: 200px;
-    float: left;
-    margin-left: 1%;
-    padding: 25px;
-    text-align: center;
-}*/
-
-/* ---------- SECTION: ABOUT  ---------- */
-
-/*gallery should have different page background colour*/
-
-#about {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-color: rgb(230, 230, 230);
-    text-align: center;
-}
-
-#about h2 {
-    line-height: 100px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-#photo1,
-#photo2,
-#photo3,
-#photo4 {
-    display: inline-block;
-    padding: 20px;
-    width: 20%;
-}
-
-#video1 {
-    padding: 20px;
-}
-
-#collaborations {
-    padding: 20px;
-}
-
-/* ---------- SECTION: CONTACT ---------- */
-
-#contact {
-    width: 100%;
-    height: calc(100vh - 100px);
-    position: relative;
-    background-color: rgb(153, 139, 192);
-    text-align: center;
-}
-
-#contact h2 {
-    line-height: 100px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-fieldset {
-    border: none;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#radio-group {
-    text-align: left;
-}
-
-#radio-group input[type="radio"] {
-    /* Hide the radio buttons */
-    display: none;
-}
-
-#radio-group label {
-    display: block;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-#radio-group input[type="radio"]+label:before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid red;
-    border-radius: 50%;
-    margin-right: 5px;
-    background-color: white;
-}
-
-#radio-group input[type="radio"]:checked+label:before {
-    background-color: #007bff;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid green;
-    border-radius: 4px;
-}
-
-/*reference!*/
 
 /* ---------- FOOTER ---------- */
 
 footer {
     height: 100px;
-}
-
-#footer-links {
-    text-align: center;
-}
-
-#footer-links li {
-    display: inline;
-    line-height: 100px;
-}
-
-#footer-links i {
-    font-size: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
-    color: #5b1313;
+    background-color: rgb(230, 190, 125);
 }

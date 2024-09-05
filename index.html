@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTgiyF-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,9 @@
   </head>
 
   <body>
+
+    <!---------- HEADER ---------->
+
     <header>
       <div id="logo">
         <a href="index.html">
@@ -36,152 +39,40 @@
       </nav>
     </header>
 
-    <section id="live">
+    <!---------- SECTION 1: LIVE ---------->
 
-      <div id="aboutbackground">
+    <section id="live">
+      <div id="live-background">
         <video autoplay muted loop>
-          <source src="assets/videos/aboutbackground.mp4" type="video/mp4" />
-          Sorry, your browser does not support this video tag.
-          <!-- show background if no video-->
+          <source src="assets/videos/livebackground.mp4" type="video/mp4" />
+          Sorry, your browser does not support this video.
+          <!-- show background colour if no video-->
         </video>
       </div>
-
-      <div id="abouttext">
-        <main>
-          <h3>
-            Moosa Al Lawati is a London-based civil engineer, and classical
-            guitarist from Muscat, the Sultanate of Oman. Self-taught from the
-            age of twenty, Moosa grew to perform in Flamenco and Arabesque
-            flavours of music with his odd time-signatures, rhythmic
-            compositions, and fingerpicking styles.<br>
-            <br>
-            His independent album "Fireworks in Andalusia" will release in June
-            2024 across all major music platforms. He aspires to support guitar
-            learners of all ages, and collaborate with emerging bands or artists
-            from the Arab world and beyond. If you're interested in holding an
-            event, learning how to play, or general inquiries,
-            <a href="#contact">get in touch</a>.
-          </h3>
-        </main>
+      
+      <div id="live-events">
+        LIVE EVENTS
       </div>
+
     </section>
 
-    <!-- <section id="events">
-
-        <h2>Live Events</h2>
-        <div class="event">
-            <h3><i class="fa-regular fa-calendar-days"></i></h3>
-            <h4>A Night of Arabic Music</h3>
-            <h5>24/05/2024 - 7:30 PM</h3>
-            <h5>Rich Mix, London E1</h3>
-            <h3>TICKETS</h3>
-        </div>
-        <div class="event">
-            <h3><i class="fa-regular fa-calendar-days"></i></h3>
-            <h4>A Night of Arabic Music</h3>
-            <h5>24/05/2024 - 7:30 PM</h3>
-            <h5>Rich Mix, London E1</h3>
-            <h3>TICKETS</h3>
-        </div>
-        <div class="event">
-            <h3><i class="fa-regular fa-calendar-days"></i></h3>
-            <h4>A Night of Arabic Music</h3>
-            <h5>24/05/2024 - 7:30 PM</h3>
-            <h5>Rich Mix, London E1</h3>
-            <h3>TICKETS</h3>
-        </div>
-        <div class="event">
-            <h3><i class="fa-regular fa-calendar-days"></i></h3>
-            <h4>A Night of Arabic Music</h3>
-            <h5>24/05/2024 - 7:30 PM</h3>
-            <h5>Rich Mix, London E1</h3>
-            <h3>TICKETS</h3>
-        </div>
-        <div class="event">
-            <h3><i class="fa-regular fa-calendar-days"></i></h3>
-            <h4>A Night of Arabic Music</h3>
-            <h5>24/05/2024 - 7:30 PM</h3>
-            <h5>Rich Mix, London E1</h3>
-            <h3>TICKETS</h3>
-        </div>
-    </section> -->
+    <!---------- SECTION 2: ABOUT ---------->
 
     <section id="about">
-        <h2>Gallery</h2>
-      <div id="photos">
-        <div id="photo1">photo1</div>
-        <div id="photo2">photo2</div>
-        <div id="photo3">photo3</div>
-        <div id="photo4">photo4</div>
-      </div>
-
-      <div id="video1">video1</div>
-      <div id="collaborations">collaborations</div>
+      ABOUT
     </section>
+
+    <!---------- SECTION 3: CONTACT ---------->
 
     <section id="contact">
-
-        <h2>Get in touch!</h2>
-      <form action="submit.php" method="POST">
-        <fieldset>
-          <div id="radio-group">
-            <h3>Subject:</h3>
-            <input type="radio" id="subject-general" name="subject" value="general"/>
-            <label for="subject-general">General Inquiry</label>
-            <input type="radio" id="subject-learn" name="subject" value="learn"/>
-            <label for="subject-learn">Learn How to Play the Guitar</label>
-            <input type="radio" id="subject-book" name="subject" value="book"/>
-            <label for="subject-book">Book a Performance / Session</label>
-          </div>
-
-          <div>
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-
-          <div>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-
-          <div>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
-
-          <div>
-            <label>Your Message:</label>
-            <textarea
-              placeholder="Please include dates, times, and venue details if available"
-              name="inquiry"
-            ></textarea>
-          </div>
-
-          <div>
-            <input type="submit" value="Submit" />
-          </div>
-        </fieldset>
-      </form>
+      CONTACT
     </section>
 
+    <!---------- FOOTER ---------->
+
     <footer>
-      <ul id="footer-links">
-        <li>
-          <a href="https://www.soundcloud.com" target="_blank"
-            ><i class="fa-brands fa-soundcloud"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.soundcloud.com" target="_blank"
-            ><i class="fa-brands fa-soundcloud"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.soundcloud.com" target="_blank"
-            ><i class="fa-brands fa-soundcloud"></i
-          ></a>
-        </li>
-      </ul>
+      FOOTER
     </footer>
+
   </body>
 </html>
