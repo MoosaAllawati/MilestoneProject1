@@ -325,7 +325,7 @@ section:last-of-type {
 }
 
 @media (max-width: 865px) {
-    
+
     #live-events h2 {
         text-shadow: 2px 2px black;
         font-size:smaller;
@@ -334,13 +334,15 @@ section:last-of-type {
     #live-events {
         height: auto;
         width: calc(100vw - 40px);
-        position: absolute;
+        position: relative;
         top: 20px;
         left: 20px;
         right: 20px;
+        bottom: auto;
         background-color: rgba(0, 0, 0, 0.5);
         padding: 20px;
         border-radius: 30px;
+        margin-bottom: 20px;
     }
 
     #live-events div {
@@ -397,6 +399,56 @@ section:last-of-type {
     width: 100%;
     height: 100%;
     border-radius: 50px;
+}
+
+@media (max-width: 865px) {
+    #about-bio {
+        display:block;
+        height: auto;
+        width: calc(100vw - 40px);
+        position: relative;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: auto;
+        border-radius: 30px;
+        padding: 20px;
+        background-image: linear-gradient(rgb(230, 190, 125),rgb(230, 230, 230));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    #about-media {
+        display:block;
+        height: auto;
+        width: calc(100vw - 40px);
+        position: relative;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: auto;
+        border-radius: 30px;
+        padding: 20px;
+        background-image: linear-gradient(rgb(230, 190, 125),rgb(230, 230, 230));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    #about-bio h2 {
+        color: rgb(40, 40, 40);
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+    #about-media iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+    }
 }
 
 /* ---------- SECTION 3: CONTACT ---------- */
@@ -470,6 +522,26 @@ input[type="submit"]:hover {
     height: 340px;
     width: 250px;
     margin: 10px;
+}
+
+@media (max-width: 865px) {
+    #contact-form {
+        display:block;
+        height: auto;
+        width: calc(100vw - 40px);
+        position: relative;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: auto;
+        border-radius: 30px;
+        padding: 20px;
+        background-image:linear-gradient(rgb(230, 190, 125),rgb(40, 40, 40), rgb(40, 40, 40));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 }
 
 /* ---------- FOOTER ---------- */
