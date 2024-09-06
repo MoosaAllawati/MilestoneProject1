@@ -129,6 +129,59 @@ header {
     /* to allow some breathing space for border */
 }
 
+#hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger i {
+    font-size: 30px;
+    color: rgb(230, 190, 125);
+}
+
+@media (max-width: 865px) {
+    #logo {
+        margin-left: 20px;
+    }
+    #logo img {
+        height: 60px;
+        width: 60px;
+        margin-right: 20px;
+    }
+    
+    #logo h1 {
+        font-size: 25px;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        border: 2px dotted rgb(230, 190, 125);
+        border-radius: 5px;
+        background-color: rgb(40, 40, 40); /* Background color for the dropdown */
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    #menu li {
+        margin: 20px 0;
+    }
+
+    #hamburger {
+        display: inline;
+        float: right;
+        position: absolute;
+        right: 20px;
+    }
+}
+
 /*---------- SECTIONS ----------*/
 
 section {
@@ -149,6 +202,22 @@ section:last-of-type {
     height: calc(100vh - 200px);
     /* remove 200px for header and footer clearance */
     background-image: linear-gradient(rgb(40, 40, 40), rgb(40, 40, 40), rgb(230, 190, 125));
+}
+
+@media (max-width: 865px) {
+    section {
+        min-height: 100vh;
+        height: auto;
+    }
+
+    /*#live-events, #about-bio, #about-media, #contact-form {
+        position: relative;
+        height: auto;
+        width: calc(100% - 40px);
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+    }*/
 }
 
 /* ---------- SECTION 1: LIVE ---------- */
@@ -253,6 +322,35 @@ section:last-of-type {
 
 .past button::before {
     content: "PAST";
+}
+
+@media (max-width: 865px) {
+    
+    #live-events h2 {
+        text-shadow: 2px 2px black;
+        font-size:smaller;
+    }
+    
+    #live-events {
+        height: auto;
+        width: calc(100vw - 40px);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    #live-events div {
+        font-size: 12px;
+        margin-top: 25px;
+    }
+
+    #live-events button {
+        display: block;
+    }
 }
 
 /* ---------- SECTION 2: ABOUT ---------- */

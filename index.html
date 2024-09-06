@@ -37,13 +37,17 @@
           </li>
         </ul>
       </nav>
+
+      <div id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
 
     <!---------- SECTION 1: LIVE ---------->
 
     <section id="live">
       <div id="live-background">
-        <video autoplay muted loop alt="muted background video of artist">
+        <video autoplay muted loop>
           <source src="assets/videos/livebackground.mp4" type="video/mp4" />
           Sorry, your browser does not support this video.
           <!-- show background colour if no video-->
@@ -204,5 +208,11 @@
       </ul>
     </footer>
 
+    <script>
+      document.getElementById("hamburger").onclick = function() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+      };
+    </script>
   </body>
 </html>
