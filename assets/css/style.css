@@ -209,15 +209,10 @@ section:last-of-type {
         min-height: 100vh;
         height: auto;
     }
-
-    /*#live-events, #about-bio, #about-media, #contact-form {
-        position: relative;
+    section:last-of-type {
+        min-height: 100vh;
         height: auto;
-        width: calc(100% - 40px);
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 30px;
-    }*/
+    }
 }
 
 /* ---------- SECTION 1: LIVE ---------- */
