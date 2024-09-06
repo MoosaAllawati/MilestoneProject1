@@ -53,7 +53,6 @@
       <div id="live-events">
         LIVE EVENTS
       </div>
-
     </section>
 
     <!---------- SECTION 2: ABOUT ---------->
@@ -65,7 +64,55 @@
     <!---------- SECTION 3: CONTACT ---------->
 
     <section id="contact">
-      CONTACT
+      <div id="contact-form">
+        <form action="submit.php" method="POST">
+          <fieldset>
+            <div id="contact-form-col1">
+              <div>
+                <h3><label for="name">Name/Company:</label></h3>
+                <input type="text" id="name" name="name" required />
+              </div>
+              
+              <div>
+                <h3><label for="email">Email Address:</label></h3>
+                <input type="email" id="email" name="email" required />
+              </div>
+            
+              <div>
+                <h3><label for="phone">Phone Number:</label></h3>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+
+              <div id="radio-group">
+                <h3><label for="subject-group">Subject:</label></h3>
+                <div>
+                  <input type="radio" id="subject-general" name="subject" value="general"/>
+                  <label for="subject-general">General Inquiry</label>
+                </div>
+                <div>
+                  <input type="radio" id="subject-learn" name="subject" value="learn"/>
+                  <label for="subject-learn">Learn Playing the Guitar</label>
+                </div>
+                <div>
+                  <input type="radio" id="subject-book" name="subject" value="book"/>
+                  <label for="subject-book">Book a Performance/Session</label>
+                </div>
+              </div>
+            </div>
+            
+            <div id="contact-form-col2">
+              <div>
+                <h3><label>Your Message:</label></h3>
+                <textarea placeholder="Please include dates, times, and venue details if available" name="inquiry"></textarea>
+              </div>
+              <div>
+              <input type="submit" value="SEND" />
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
     </section>
 
     <!---------- FOOTER ---------->

@@ -6,9 +6,15 @@ color palette:
 */
 
 * {
-    padding-top: 0;
+    padding: 0;
     border: 0;
-    margin-top: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 100px;
+    /* to account for sections visibility under header */
 }
 
 body {
@@ -33,26 +39,36 @@ h1 {
     color: rgb(230, 190, 125);
     letter-spacing: 1px;
     text-shadow: 2px 2px black;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
     font-family: 'Romanesco', Impact;
     font-size: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 h3 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 h4 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 h5 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 /*  ---------- HEADER ---------- */
@@ -117,11 +133,14 @@ section {
     width: 100%;
     height: calc(100vh - 100px);
     /* remove 100px for header clearance */
-    padding-top: 100px;
-    /* shift the section down to start below header */
     position: relative;
     overflow: hidden;
     background-color: rgb(40, 40, 40);
+}
+
+section:first-of-type {
+    margin-top: 100px;
+    /* bring all sections down to uncover from header */
 }
 
 section:last-of-type {
@@ -149,15 +168,17 @@ section:last-of-type {
 }
 
 #live-events {
-    height: calc(100vh - 260px);
-    /* using developer tools to fine-tune desired height */
+    height: calc(100vh - 200px);
+    /* viewport height minus header minus two 50px clearances */
     width: 60%;
     position: absolute;
-    top: 150px;
+    top: 50px;
     right: 50px;
+    bottom: 50px;
+    /* although redundant */
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    border-radius: 5px;
+    padding: 50px;
+    border-radius: 50px;
     z-index: 1;
     /* to ensure it remains on top of background */
 }
@@ -168,7 +189,67 @@ section:last-of-type {
 
 /* ---------- SECTION 3: CONTACT ---------- */
 
+#contact-form {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    left: calc(50% + 25px);
+    /* inconsistent with #live-events but for maximal form view in smaller desktops */
+    border-radius: 50px;
+    background-image: linear-gradient(rgb(230, 190, 125),rgb(40, 40, 40), rgb(40, 40, 40));
+    display: grid;
+    place-items: center;
+}
 
+input, textarea, label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#radio-group input, #radio-group label {
+    display: inline-block;
+    /* override the display block only for radio buttons */
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgb(230, 230, 230);
+}
+
+textarea {
+    width: 250px;
+    height: 241px;
+    border-radius: 5px;
+    background-color: rgb(230, 230, 230);
+    resize: none;
+    /* stop users from resizing */
+}
+
+input[type="submit"] {
+    width: 250px;
+    background-color: rgb(230, 190, 125);
+    font-weight: bold;
+    color: rgb(40, 40, 40);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(185, 150, 90);
+    /* darker version of an existing palette */
+}
+
+#contact-form-col1, #contact-form-col2 {
+    display:inline-block;
+    vertical-align: top;
+    height: 340px;
+    width: 250px;
+    margin: 10px;
+}
 
 /* ---------- FOOTER ---------- */
 
