@@ -169,6 +169,10 @@ section:last-of-type {
     /* to avoid interaction with background media */
 }
 
+#live-events h2 {
+    text-shadow: 2px 2px black;
+}
+
 #live-events {
     height: calc(100vh - 200px);
     /* viewport height minus header minus two 50px clearances */
@@ -240,7 +244,7 @@ section:last-of-type {
     content: "SOLD OUT";
 }
 
-/* If the event is past, then: */
+/* If the event is happened in the past, then: */
 
 .past button {
     background-color: rgb(150, 150, 150);
@@ -253,7 +257,49 @@ section:last-of-type {
 
 /* ---------- SECTION 2: ABOUT ---------- */
 
+#about-bio {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    bottom: 50px;
+    right: calc(50% + 25px);
+    border-radius: 50px;
+    padding: 50px;
+    background-image: linear-gradient(rgb(230, 190, 125),rgb(230, 230, 230));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: grid;
+    place-items: center; CANCEL*/
+}
 
+#about-bio h2 {
+    color: rgb(40, 40, 40);
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+#about-media {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    left: calc(50% + 25px);
+    border-radius: 50px;
+    padding: 50px;
+    background-image: linear-gradient(rgb(230, 190, 125),rgb(230, 230, 230));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: grid;
+    place-items: center; CANCEL */
+}
+
+#about-media iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
 
 /* ---------- SECTION 3: CONTACT ---------- */
 
@@ -267,6 +313,7 @@ section:last-of-type {
     border-radius: 50px;
     padding: 10px;
     background-image: linear-gradient(rgb(230, 190, 125),rgb(40, 40, 40), rgb(40, 40, 40));
+    /* gradient looking better with three colours instead of two (dark grey repeating) */
     display: grid;
     place-items: center;
 }
