@@ -222,7 +222,7 @@ section:last-of-type {
     width: 100%;
     position: absolute;
     top: 0;
-    left: 0 auto;
+    left: 0;
 }
 
 #live-background video {
@@ -417,8 +417,8 @@ section:last-of-type {
 
     #about-media {
         display:block;
-        height: auto;
         width: calc(100vw - 40px);
+        height: auto;
         position: relative;
         top: 20px;
         left: 20px;
