@@ -322,25 +322,33 @@ input, textarea, label {
     margin-bottom: 10px;
 }
 
+label {
+    margin-bottom: 5px;
+    /* all labels to become closer to their fields */
+}
+
 #radio-group input, #radio-group label {
     display: inline-block;
     /* override the display block only for radio buttons */
+    margin-bottom: 5px;
 }
 
 input[type="text"], input[type="email"], input[type="tel"] {
     width: 250px;
-    height: 20px;
+    height: 30px;
     border-radius: 5px;
     background-color: rgb(230, 230, 230);
+    padding: 5px;
 }
 
 textarea {
     width: 250px;
-    height: 241px;
+    height: 250px;
     border-radius: 5px;
     background-color: rgb(230, 230, 230);
     resize: none;
     /* stop users from resizing */
+    padding: 5px;
 }
 
 input[type="submit"] {
