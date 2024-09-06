@@ -306,10 +306,9 @@ section:last-of-type {
 #contact-form {
     position: absolute;
     top: 50px;
-    right: 50px;
+    right: 150px;
     bottom: 50px;
-    left: calc(50% + 25px);
-    /* inconsistent with #live-events but for maximal form view in smaller desktops */
+    left: 150px;
     border-radius: 50px;
     padding: 10px;
     background-image: linear-gradient(rgb(230, 190, 125),rgb(40, 40, 40), rgb(40, 40, 40));
@@ -372,4 +371,20 @@ input[type="submit"]:hover {
 footer {
     height: 100px;
     background-color: rgb(230, 190, 125);
+}
+
+#socialmedia {
+    text-align: center;
+}
+
+#socialmedia li {
+    display: inline;
+    line-height: 100px;
+}
+
+#socialmedia i {
+    font-size: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: rgb(40, 40, 40);
 }
