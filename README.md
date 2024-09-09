@@ -1,6 +1,6 @@
 # Moosa Al-Lawati
 ### The Whistling Guitarist Website
-[View Depoloyed Webite Here](https://www.link.com "Moosa Al-Lawati | The Whistling Guitarist")
+[View Depoloyed Webite Here](https://moosaallawati.github.io/MilestoneProject1/ "Moosa Al-Lawati | The Whistling Guitarist")
 
 ![Preview of website on different devices](assets/images/preview.png "preview")  
 
